@@ -92,23 +92,8 @@ Create a branch
     
 * **Error response**  
 
-    * **Code** : 400  
-    **Content** : `{'message' : 'Bad request. Datas unavailable.', 'records' : [array]}`
-    
-    OR
-    
-    * **Code** : 404  
-    **Content** : `{'message' : 'No branches found for "parent_id".', 'records' : [array]}`
-    
-    OR
-    
     * **Code** : 409  
-    **Content** : `{'message' : 'Sql Error. Unable to insert the new branch.', 'records' : [array]}`
-    
-    OR
-    
-    * **Code** : 409  
-    **Content** : `{'message' : 'Sql Error. Unable to update the new branch matpath.', 'records' : [array]}`
+    **Content** : `{'message' : 'Unable to insert the new branch.', 'records' : [array]}`
     
 ## Update a branch  
 Update a branch. To change "parent_id" use **Move a branch**
