@@ -24,12 +24,12 @@ Return json data with all branches
 * **Success response**  
 
     * **Code** : 200  
-    **Content** : `{'message' : '', 'records' : [array]}`
+    **Content** : `{"message" : "", "records" : [array]}`
     
 * **Error response**  
 
     * **Code** : 404  
-    **Content** : `{'message' : 'No branches found.', 'records' : [array]}`
+    **Content** : `{"message" : "No branches found.", "records" : [array]}`
     
 ## Show one branch  
 Return json data about a one branch and or not his children
@@ -56,12 +56,12 @@ Return json data about a one branch and or not his children
 * **Success response**  
 
     * **Code** : 200  
-    **Content** : `{'message' : '', 'records' : [array]}`
+    **Content** : `{"message" : "", "records" : [array]}`
     
 * **Error response**  
 
     * **Code** : 404  
-    **Content** : `{'message' : 'No branches found.', 'records' : [array]}`
+    **Content** : `{"message" : "No branches found.", "records" : [array]}`
     
 ## Create a branch  
 Create a branch
@@ -88,12 +88,12 @@ Create a branch
 * **Success response**  
 
     * **Code** : 201  
-    **Content** : `{'message' : 'Branch created', 'records' : {'id' : [integer]}}`
+    **Content** : `{"message" : "Branch created", "records" : {"id" : [integer]}}`
     
 * **Error response**  
 
     * **Code** : 409  
-    **Content** : `{'message' : 'Unable to insert the new branch.', 'records' : [array]}`
+    **Content** : `{"message" : "Unable to insert the new branch.", "records" : [array]}`
     
 ## Update a branch  
 Update a branch. To change "parent_id" use **Move a branch**
@@ -121,7 +121,7 @@ Update a branch. To change "parent_id" use **Move a branch**
 * **Success response**  
 
     * **Code** : 200  
-    **Content** : `{'message' : 'Branch updated', 'records' : [array]}`
+    **Content** : `{"message" : "Branch updated", "records" : [array]}`
     
 * **Error response**  
 
