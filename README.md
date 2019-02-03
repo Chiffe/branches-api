@@ -92,6 +92,9 @@ Create a branch
     
 * **Error response**  
 
+    * **Code** : 400  
+    **Content** : `{"message" : "Bad request. Datas unavailable.", "records" : [array]}`
+
     * **Code** : 409  
     **Content** : `{"message" : "Unable to insert the new branch.", "records" : [array]}`
     
