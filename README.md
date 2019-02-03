@@ -129,22 +129,17 @@ Update a branch. To change "parent_id" use **Move a branch**
 * **Error response**  
 
     * **Code** : 400  
-    **Content** : `{'message' : 'Bad request. Datas unavailable.', 'records' : [array]}`
+    **Content** : `{"message" : "Bad request. Datas unavailable.", "records" : [array]}`
     
     OR
     
     * **Code** : 404  
-    **Content** : `{'message' : 'No branches found.', 'records' : [array]}`
+    **Content** : `{"message" : "No branch found.", "records" : [array]}`
     
     OR
     
     * **Code** : 409  
-    **Content** : `{'message' : 'Error. Unable to update the branch. See the datas sent.', 'records' : [array]}`
-    
-    OR
-    
-    * **Code** : 409  
-    **Content** : `{'message' : 'Sql Error. Unable to update the branch.', 'records' : [array]}`
+    **Content** : `{"message" : "Unable to update the branch.", "records" : [array]}`
     
 ## Move a branch  
 Move a branch and all his children
@@ -171,27 +166,27 @@ Move a branch and all his children
 * **Success response**  
 
     * **Code** : 200  
-    **Content** : `{'message' : 'Branch has been moved', 'records' : [array]}`
+    **Content** : `{"message" : "Branch has been moved", "records" : [array]}`
     
     OR
     
     * **Code** : 200  
-    **Content** : `{'message' : 'No treatments required.', 'records' : [array]}`
+    **Content** : `{"message" : "No treatments required.", "records" : [array]}`
     
 * **Error response**  
 
     * **Code** : 404  
-    **Content** : `{'message' : 'Error with parent branch.', 'records' : [array]}`
+    **Content** : `{"message" : "Branch parent doesn't exist.", "records" : [array]}`
     
     OR
     
     * **Code** : 404  
-    **Content** : `{'message' : 'No branches found.', 'records' : [array]}`
+    **Content** : `{"message" : "No branch found.", "records" : [array]}`
     
     OR
     
     * **Code** : 409  
-    **Content** : `{'message' : 'Sql Error. Unable to move the branch.', 'records' : [array]}`
+    **Content** : `{"message" : "Unable to move the branch.", "records" : [array]}`
     
 ## Delete a branch  
 Delete a branch and all his children
@@ -216,14 +211,9 @@ Delete a branch and all his children
 * **Success response**  
 
     * **Code** : 200  
-    **Content** : `{'message' : 'Branches deleted', 'records' : [array]}`
+    **Content** : `{"message" : "X Branch(es) deleted.", "records" : [array]}`
     
 * **Error response**  
 
     * **Code** : 404  
-    **Content** : `{'message' : 'No branches found. No record deletes.', 'records' : [array]}`
-    
-    OR
-    
-    * **Code** : 404  
-    **Content** : `{'message' : 'No branches found.', 'records' : [array]}`
+    **Content** : `{"message" : "No branch found. No record deleted.", "records" : [array]}`
